@@ -1,0 +1,64 @@
+:root {
+    --color-primary: dodgerblue;
+    --color-secondary: indigo;
+    --color-tertiary: white;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Mea Culpa", cursive;
+    font-size: 20px;
+    color: var(--color-secondary);
+    background: var(--color-primary);
+}
+
+
+h1 {
+    text-align: center;
+    margin: 0.2rem;
+    font-size: clamp(3rem, 5vw, 15rem);
+}
+
+
+#drum-machine button {
+    font-family: inherit;
+    font-weight: bold;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-size: clamp(1.5rem, 3vw, 10rem);
+}
+
+#drum-machine button:hover,
+#drum-machine button:focus {
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    cursor: pointer;
+}
+#drum-machine button:focus-visible {
+    outline: 3px solid var(--color-tertiary);
+    outline-offset: 4px;
+}
+
+#drum-machine p {
+    min-height: 3rem;
+    text-align: center;
+    margin: 1rem;
+    font-size: clamp(1.8rem, 2vw, 8rem);
+    font-weight: bold;
+}
+
+#pad-bank {
+    display: grid;
+    grid-template-columns: repeat(3, clamp(3rem, 10vw, 15rem));
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}

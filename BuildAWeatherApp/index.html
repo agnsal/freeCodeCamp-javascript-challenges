@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Weather App</title>
+
+  <meta name="author" content="Agnese Salutari">
+  <meta name="description" content="An Example of Weather App by Agnese Salutari">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Weather App</h1>
+
+  <form id="get-weather-form" class="card middle">
+
+    <label for="city-select">Select a city:
+      <select id="city-select">
+        <option value="" selected> </option>
+        <option value="paris">Paris</option>
+        <option value="london">London</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="los angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="new york">New York</option>
+      </select>
+    </label>
+
+    <button type="button" id="get-weather-btn">Get Weather</button>
+  </form>
+
+  <div id="weather-card" class="middle invisible">
+
+    <div id="weather-title">
+      <h2 id="location"></h2>
+      <img id="weather-icon" src="" alt="Weather icon">
+    </div>
+
+    <div class="sep"></div>
+
+    <div id="weather-info">
+      <p id="main-temperature"></p>
+      <p id="feels-like"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+      <p id="wind-gust"></p>
+      <p id="weather-main"></p>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
